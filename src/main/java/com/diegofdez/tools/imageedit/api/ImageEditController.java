@@ -26,6 +26,7 @@ public class ImageEditController {
     @PostMapping(value = "/file/metadata")
     public GetMetadataResponse getImageMetadataFromFile(FileRequest request) {
         log.info("Get metadata from file");
+        service.getImageMetadataFromFile(request);
         return null;
     }
 
